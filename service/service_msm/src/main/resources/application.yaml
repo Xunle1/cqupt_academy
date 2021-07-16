@@ -1,0 +1,30 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: service-msm
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/guli?serverTimezone=GMT%2B8
+    username: root
+    password: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  redis:
+    host: 192.168.248.132
+    port: 6379
+    lettuce:
+      shutdown-timeout: 100
+mail:
+  host: smtp.qq.com
+  username: 1601315809@qq.com
+  password: xpnsajskvfokhdic
+  default-encoding: UTF-8
+  sender: 1601315809@qq.com

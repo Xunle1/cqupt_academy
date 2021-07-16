@@ -1,0 +1,26 @@
+# 服务端口
+server:
+  port: 8003
+
+# 服务名
+spring:
+  application:
+    name: com.xunle.msm.service-vod
+  # 环境设置
+  profiles:
+    active: dev
+  # 最大上传单个文件大小：默认1M
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+  # nacos注册中心服务地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+# 阿里云vod
+aliyun.vod.file.keyid: LTAI5tNAirpUwT2ZdKwuKQne
+aliyun.vod.file.keysecret: c07hM0fMkvBIeyXOY3up4s89QR73tK
+
