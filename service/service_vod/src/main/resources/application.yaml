@@ -21,6 +21,6 @@ spring:
         server-addr: 127.0.0.1:8848
 
 # 阿里云vod
-aliyun.vod.file.keyid: LTAI5tNAirpUwT2ZdKwuKQne
-aliyun.vod.file.keysecret: c07hM0fMkvBIeyXOY3up4s89QR73tK
+aliyun.vod.file.keyid: keyId
+aliyun.vod.file.keysecret: keySecret
 

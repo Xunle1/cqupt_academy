@@ -6,18 +6,19 @@ server:
 spring:
   application:
     name: service-edu
-  # ��������
   profiles:
     active: dev
+  # 数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql:///guli?serverTimezone=GMT%2B8
     username: root
     password: root
-  # ����json��ʱ���ʽ
+  # json时间格式
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  # nacos配置
   cloud:
     nacos:
       discovery:
@@ -29,14 +30,14 @@ spring:
         max-wait: -1
         max-idle: 5
         min-idle: 0
-    host: 192.168.248.132
+    host: 47.98.149.186
     port: 6379
     database: 0
     timeout: 1800000
 
-# mybatis��־
+
 mybatis-plus:
+  # mybatis日志
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  # ����mapper·��
   mapper-locations: classpath:com/xunle/educms/mapper/xml/*.xml

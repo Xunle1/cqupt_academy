@@ -42,9 +42,10 @@ mybatis-plus:
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 
+# 和service_msm中一样的配置
 mail:
   host: smtp.qq.com
-  username: 1601315809@qq.com
-  password: xpnsajskvfokhdic
+  username: username
+  password: password
   default-encoding: UTF-8
-  sender: 1601315809@qq.com
+  sender: sender

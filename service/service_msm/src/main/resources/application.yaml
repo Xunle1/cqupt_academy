@@ -24,7 +24,10 @@ spring:
       shutdown-timeout: 100
 mail:
   host: smtp.qq.com
-  username: 1601315809@qq.com
-  password: xpnsajskvfokhdic
+  # 邮箱名
+  username: username
+  # 邮箱授权码
+  password: password
   default-encoding: UTF-8
-  sender: 1601315809@qq.com
+  # 发件人
+  sender: sender
