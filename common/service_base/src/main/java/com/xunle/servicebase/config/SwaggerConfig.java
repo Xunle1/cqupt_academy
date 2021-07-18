@@ -43,7 +43,7 @@ public class SwaggerConfig {
         Contact contact = new Contact("xunle","http://www.bing.com", "1601315809@qq.com");
 
         return new ApiInfoBuilder()
-                .title("谷粒学院")
+                .title("邮学院")
                 .description("描述")
                 .version("1.0")
                 .contact(contact)
